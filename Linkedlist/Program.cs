@@ -8,9 +8,9 @@ namespace Linkedlist
         static void Main(string[] args)
         {
             LinkedList list = new LinkedList();
-            list.Addreverse(70);
-            list.Addreverse(30);
-            list.Addreverse(56);
+            list.Addnode(56);
+            list.Addnode(30);
+            list.Addnode(70);
             list.Display();
         }
     }
