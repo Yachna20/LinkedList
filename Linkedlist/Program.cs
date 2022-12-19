@@ -12,7 +12,7 @@ namespace Linkedlist
             list.Addnode(30);
             list.Addnode(70);
             list.Display();
-            list.Delete();
+            list.DeleteLast();
             list.Display();
         }
     }
