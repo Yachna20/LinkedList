@@ -48,6 +48,15 @@ namespace Linkedlist
                 Console.WriteLine("\n");
             }
         }
-        
+        public void Delete()
+        {
+            Node node = head;
+            if (head != null)
+            {
+                node = head;
+                head = head.Next;
+                node = null;
+            }
+        }
     }
 }
