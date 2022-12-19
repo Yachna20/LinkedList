@@ -23,6 +23,7 @@ namespace Linkedlist
                 {
                     temp = temp.Next;
                 }
+
                 temp.Next = node;
             }
             Console.WriteLine("{0} inserted into linked list", node.data);
@@ -47,6 +48,20 @@ namespace Linkedlist
                 Console.WriteLine("\n");
             }
         }
+        public void Addreverse(int data)
+        {
+            Node node = new Node(data);
+            if (head == null)
+            {
+                head = node;
+            }
+            else
+            {
+                Node temp = head;
+                head = node;
+                head.Next = temp;
+            }
 
+        }
     }
 }
